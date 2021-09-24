@@ -10,18 +10,28 @@
     <nav id="navigation-bar"><h1>Cash Register</h1></nav>
     <main>
       <section class="user-input">
-        <div id="heading-bill">Bill amount</div>
-        <input id="bill-amount" type="number" />
+        <label class="input-label" for="bill-amount">Bill Amount</label>
+        <input
+          id="bill-amount"
+          type="number"
+          placeholder="Enter valid amount"
+        />
       </section>
 
       <section class="user-input">
-        <div id="heading-cash">Cash given</div>
-        <input id="cash-amount" type="number" />
+        <label class="input-label" for="cash-amount">Cash Given</label>
+        <input
+          id="cash-amount"
+          type="number"
+          placeholder="Enter valid amount"
+        />
       </section>
 
       <div id="btn-container">
         <button id="btn-primary">Check</button>
       </div>
+
+      <p id="error-message"></p>
     </main>
 
     <script src="script.js"></script>
