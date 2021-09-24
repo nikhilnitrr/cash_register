@@ -7,7 +7,7 @@ var error = document.querySelector("#error-message");
 var output = document.querySelector("#user-output");
 
 // labels
-var labels = ["Amount", "No of notes"];
+var labels = ["Note", "No of notes"];
 
 // notes object
 var notes = {
@@ -50,10 +50,13 @@ function myScript() {
   var cashAmount = parseInt(cashref.value);
 
   if (billAmount < 0 || cashAmount < 0) {
-    error.innerText = "Invalid input";
+    error.innerText = "🥵🥵 Invalid Amount 🥵🥵";
+    // output.innerHTML = "";
   } else if (cashAmount < billAmount) {
-    error.innerText = "Do you want to get beaten?";
+    error.innerText = "🥵🥵 Do you want to get beaten? 🥵🥵";
+    // output.innerHTML = "";
   } else {
+    error.innerText = "";
     calculateNotes(cashAmount - billAmount);
   }
 }
@@ -89,5 +92,6 @@ function buildTable() {
   }
   table.appendChild(tbody);
   output.innerHTML = "";
+  table.setAttribute("class", "output-table");
   output.appendChild(table);
 }

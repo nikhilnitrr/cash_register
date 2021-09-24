@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,400&display=swap");
+
+:root {
+  --primary-color: #db2777;
+}
+
+body {
+  font-family: "Comic Neue", cursive;
+  margin: 0px;
+}
+
+#navigation-bar {
+  text-align: center;
+  width: 100%;
+}
+
+.user-input {
+  text-align: center;
+}
+
+.input-label {
+  display: block;
+  margin: 1rem;
+}
+
+#bill-amount,
+#cash-amount {
+  min-height: 5vh;
+  max-height: 10vh;
+  width: 40%;
+  border-color: var(--primary-color);
+}
+
+input[placeholder="Enter valid amount"] {
+  text-align: center;
+}
+
+#btn-primary {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.5rem;
+  border-color: var(--primary-color);
+  border-radius: 1rem;
+}
+
+#error-message {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+#output-message {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.output-table,
+th,
+td {
+  border: 1px solid var(--primary-color);
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.link-primary {
+  text-decoration: none;
+  color: var(--primary-color);
+  margin: 1.5rem;
+}
+
+
+
+#footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

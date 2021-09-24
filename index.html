@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cash Register</title>
+    <link href="style.css" rel="stylesheet" />
+    <title>Cash Register Manager</title>
   </head>
   <body>
-    <nav id="navigation-bar"><h1>Cash Register</h1></nav>
+    <nav id="navigation-bar">
+      <h1>💰 Cash Register Manager💰</h1>
+    </nav>
     <main>
       <section class="user-input">
-        <label class="input-label" for="bill-amount">Bill Amount</label>
+        <label class="input-label" for="bill-amount">Bill Amount 👇</label>
         <input
           id="bill-amount"
           type="number"
@@ -19,7 +22,9 @@
       </section>
 
       <section class="user-input">
-        <label class="input-label" for="cash-amount">Cash Given</label>
+        <label class="input-label" for="cash-amount"
+          >Cash Given by Customer 👇</label
+        >
         <input
           id="cash-amount"
           type="number"
@@ -27,13 +32,59 @@
         />
       </section>
 
-      <div id="btn-container">
-        <button id="btn-primary">Check</button>
-      </div>
+      <button id="btn-primary">Check</button>
 
       <p id="error-message"></p>
-      <section id="user-output"></section>
+      <div id="output-message">Return change to customer 👇</div>
+
+      <section id="user-output">
+        <table class="output-table">
+          <thead>
+            <tr>
+              <th>Note</th>
+              <th>No of notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>100</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>500</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
+
+    <footer id="footer">
+      <div>💖💖💖💖💖💖💖</div>
+      <a class="link-primary" href="">linkedin</a>
+      <a class="link-primary" href="">instagram</a>
+      <a class="link-primary" href="">github</a>
+    </footer>
 
     <script src="script.js"></script>
   </body>
