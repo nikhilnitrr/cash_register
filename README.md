@@ -10,3 +10,18 @@
 
 👉 Now, the application will help the user by telling how can he/she return the change to the customer with a minimum number of notes?
 
+# Technology Stack
+
+HTML5
+
+CSS3
+
+Vanilla JavaScript
+
+# Live Project
+
+https://my-cash-register-manager.netlify.app/
+
+![image](https://user-images.githubusercontent.com/48703875/135701311-1cc911b4-413d-4820-be3d-a011e47a8ac8.png)
+
+
